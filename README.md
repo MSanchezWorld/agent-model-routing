@@ -13,7 +13,7 @@ This public guide helps choose a model for a task while accounting for quality, 
 | Ambiguous work where stronger reasoning may prevent rework | GPT-6 Astra / low |
 | Consequential architecture, benchmark validity, or unresolved hard problems | GPT-6 Astra / medium; raise effort only when needed |
 
-See [the full routing guide](ROUTING.md) for exceptions and cost limits. [Set up another computer](SETUP.md) to use the guide without access to a private file store. [Changes](CHANGELOG.md) records reviewed revisions.
+See [the full routing guide](ROUTING.md) for exceptions and cost limits. [Agent instructions](AGENTS.md) explain how to use and review it. [Set up another computer](SETUP.md) to use the guide without access to a private file store. [Changes](CHANGELOG.md) records reviewed revisions.
 
 The starting points follow [OpenAI's Codex subagent guidance](https://learn.chatgpt.com/docs/agent-configuration/subagents) and [model selection guide](https://developers.openai.com/api/docs/guides/model-selection). [Codex credit rates](https://learn.chatgpt.com/docs/pricing) help compare token prices. There is no published benchmark here showing which route minimizes complete task cost for a specific workspace.
 
