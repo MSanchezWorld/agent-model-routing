@@ -1,12 +1,14 @@
 # World Report audience routing
 
-Updated: 2026-09-23. This is the operating contract for the newsletter connected to this guide. It does not change the model routes in [ROUTING.md](ROUTING.md).
+Updated: 2026-09-24. This is the operating contract for the newsletter connected to this guide. It does not change the model routes in [ROUTING.md](ROUTING.md).
 
 **One master publication: The Miguel Sanchez World Report.** Track acquisition, interests, audience type, consent, and product events separately. A tag is a useful label, not proof that an integration is running or that someone agreed to receive every topic.
 
 ## Implementation status
 
-The public guide's newsletter and audit links are available. The post-signup preferences survey has been saved as a draft. Automatic tag synchronization, product-event connections, topic entry pages, and the new signup flow are not live. Keep using the existing newsletter link until the owner approves and the relevant pages are published. Never replace a working link with a proposed path from this document.
+The public guide's newsletter and audit links are available. Beehiiv's subscriber management page now has two visible preferences bound to the existing `msw_interests` and `msw_audience_type` fields. Three dynamic segments are saved for active subscribers who selected AGV/Navo, WheelOS, or Stack; each currently has zero members. The homepage signup draft has email and first name only; its older inline Interests field has been removed from that draft. Neither a production preference submission nor the revised homepage publication has been checked. The separate post-signup survey remains a draft because this Beehiiv account requires a paid plan to publish surveys. Custom source/tag synchronization, product-event connections, topic entry pages, and the new signup flow are not live. Keep using the existing newsletter link until the relevant pages are published. Never replace a working link with a proposed path from this document.
+
+On the current plan, the native preference center is the available way for existing subscribers to edit their choices. Beehiiv says its email footer includes a personalized preference-center link, and `{{subscriber_preferences_url}}` can also be used in email content. These account-page preferences do not automatically become an immediate question in the signup flow. Confirm the subscriber journey and saved values with an authorized real signup before claiming end-to-end behavior. See [Beehiiv's preference-center instructions](https://www.beehiiv.com/support/article/25861115929495-setting-up-a-subscriber-preferences-center).
 
 ## 1. Acquisition: where they came from
 

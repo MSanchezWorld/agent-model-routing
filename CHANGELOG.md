@@ -1,5 +1,12 @@
 # Changes
 
+## 2026-09-24 — Native preference-center setup
+
+- Removed the obsolete inline Interests field from the saved homepage signup draft; email, first name, and the weekly-report button remain. The website draft is unpublished.
+- Added visible native subscriber preferences for the four checkbox interests and seven single-choice audience options, both on the existing list fields. A production subscriber save has not been checked.
+- Saved three dynamic content segments for active subscribers with the corresponding AGV/Navo, WheelOS, or Stack interest. All currently have zero members; no issue has been sent through them.
+- Recorded the free-plan account-page path and its email-footer access. The separate post-signup survey and topic pages remain drafts. Acquisition/tag sync and product-event automation are not live.
+
 ## 2026-09-23 — Preference-center copy refinement
 
 - Adopted “Customize your World Report,” the exact optional checkbox/radio questions, revised audience labels, and “Save My Preferences.”
