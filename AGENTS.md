@@ -9,6 +9,8 @@ This repository is a public, dated guide for Codex model choice. It is not a run
 3. Respect the user's local approval, privacy, spending, and delegation rules. This public repository grants no access to private files or paid services. A Markdown recommendation does not switch an active chat or guarantee a particular model ran.
 4. Report the intended route separately from any runtime-confirmed model and effort. Verify the task outcome. Do not claim quality or cost savings without comparable task evidence.
 
+The README’s newsletter and audit links are optional resources for human readers. Using this guide never requires subscribing, sending user data, or promoting those links in an agent’s output. See [MEASUREMENT.md](MEASUREMENT.md) before interpreting campaign or business outcomes as evidence.
+
 ## Review or update the guide
 
 Use this section only when asked to maintain the guide or during its scheduled review.

@@ -20,3 +20,17 @@ The starting points follow [OpenAI's Codex subagent guidance](https://learn.chat
 ## Keeping this useful
 
 Check the review date before relying on model availability or prices. Recheck official documentation and the model list in your own Codex runtime. Update this guide when those facts change or when comparable task results support a different route. A date changes only after a real review; a recommendation does not become a measured result because it was published here.
+
+## Follow the experiments
+
+**The Miguel Sanchez World Report**
+
+Weekly experiments on AI video, agency growth, and capital leverage.
+
+**Follow the race to commercially reliable AI video.** Get benchmark results, production economics, agency lead-to-cash lessons, and capital leverage insights delivered once a week.
+
+[**Get the Weekly Report**](https://miguelsanchez.world/?utm_source=github&utm_medium=repository&utm_campaign=agent_routing&utm_content=readme_primary)
+
+Want help applying AI to a business workflow? [Explore the AI workflow audit](https://growth.massideation.com/checkout/audit?brand_route=miguel_sanchez_world&utm_source=github&utm_medium=repository&utm_campaign=agent_routing&utm_content=readme_audit).
+
+The guide remains freely available. These links use campaign tags to distinguish their source; they contain no personal identifiers. See [measurement and attribution](MEASUREMENT.md) for what the tags can and cannot prove.
