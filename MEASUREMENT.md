@@ -14,6 +14,8 @@ The welcome email's audit link uses `utm_source=msw_report`, `utm_medium=email`,
 
 Campaign values describe a placement, never a person. Do not add email addresses, names, customer IDs, API keys, or private project names to public URLs.
 
+The [audience routing contract](AUDIENCE_ROUTING.md) separates acquisition source, selected interests, self-reported audience type, and confirmed product events. A GitHub acquisition does not imply Navo interest. A Stack booking does not imply a Navo purchase. Preserve product and consent scope when attributing outcomes.
+
 ## Reports to keep separate
 
 | Question | Evidence | Limit |
@@ -38,6 +40,8 @@ Use the existing email and payment platforms. A periodic export audit needs no a
 6. Publish aggregate findings only after review. Keep customer details, raw exports, and payment identifiers out of this repository and all public issues.
 
 This is a periodic reconciliation procedure. It is not a claim that an automatic subscriber-to-payment integration is deployed or that a paid conversion has been verified.
+
+When reporting by interest or avatar, record whether the value was known at signup or changed later. Keep unknowns visible; do not backfill historical cohorts using today's preferences. Count people once within a cohort, and do not sum overlapping topic audiences as if they were distinct people. Report contribution, waitlist, booking, and purchase separately rather than inventing a universal intent score.
 
 ## Agent boundaries
 
