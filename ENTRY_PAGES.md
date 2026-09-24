@@ -7,7 +7,7 @@ Updated: 2026-09-23. **Copy and routing specification, not live URLs.** Do not s
 - Email and first name at signup; do not require interest selection before capture.
 - Button: **Get the Weekly Report**.
 - Explain the weekly general issue plus the chosen topic. Provide working privacy and unsubscribe/preference information.
-- After signup, show the optional questions in [AUDIENCE_ROUTING.md](AUDIENCE_ROUTING.md). A skipped survey must not undo a clearly disclosed topic signup.
+- After signup, show **Customize your World Report** with the optional checkbox interests and single-choice audience question in [AUDIENCE_ROUTING.md](AUDIENCE_ROUTING.md). New subscribers who choose no interests get the broad weekly issue. An explicit empty preference save clears topic preferences; leaving an existing preference page without saving makes no change. Confirm the provider's empty-response behavior before activation.
 - Capture the actual incoming UTMs. Store the page identifier separately; do not replace `youtube` with `stack` because the visitor chose Stack.
 - Store consent wording/version, timestamp, and the choice through the supported private system. Do not put identity or consent data in public URLs.
 

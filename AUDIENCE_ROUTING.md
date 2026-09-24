@@ -12,6 +12,8 @@ The public guide's newsletter and audit links are available. The post-signup pre
 
 Preserve Beehiiv's native acquisition source, medium, campaign, and content. Normalize a copy of an allowlisted `utm_source` for the following tags; retain the original attribution record privately.
 
+[Source-specific links](SOURCE_LINKS.csv) point to the existing general signup page until the separate entry pages are live. Their `expected_source_tag` column specifies the mapping to implement; it is not a claim that tags are applied automatically. No source question belongs on the preference page. The shared referral link identifies the channel, not the individual referrer.
+
 | `utm_source` | Acquisition tag |
 | --- | --- |
 | `youtube` | `source_youtube` |
@@ -33,7 +35,7 @@ Beehiiv documents [subscriber attribution](https://www.beehiiv.com/support/artic
 
 ## 2. Interests: what they want
 
-Capture email first. Ask **What do you want more of?** after signup. Allow multiple choices and skipping. Store the selected labels in a list field named `msw_interests` and map them exactly:
+Capture email first. Use the heading **Customize your World Report** and subheadline: **Choose what you want more of. Select all that apply. You can update your preferences or unsubscribe at any time.** Ask **What do you want more of? Select all that apply.** Use checkboxes, allow multiple choices and skipping. Store the selected labels in a list field named `msw_interests` and map them exactly:
 
 | Choice | Tag |
 | --- | --- |
@@ -44,13 +46,15 @@ Capture email first. Ask **What do you want more of?** after signup. Allow multi
 
 Use exact list membership, not substring matching. If an older `Interests` string field exists, preserve it until its actual encoding and consent context have been reviewed; do not silently migrate it by guessing delimiters.
 
-An explicitly described topic signup can establish its topic interest. The generic signup has no blanket topic default. An explicit preference update replaces prior inferred/default interests; deselection removes the corresponding derived tag. A skipped survey leaves valid prior preferences unchanged. Preserve an explicit “none” or opt-out separately from an unanswered question so old defaults cannot return.
+No interest selection is required. A new subscriber who selects nothing receives the broad weekly World Report, with no blanket Navo default. An explicitly described topic signup can establish its topic interest, but an explicit preference save replaces prior inferred/default interests; deselection removes the corresponding derived tag. Saving an empty interest set means broad-only content, while leaving an existing subscriber's preference page without saving does not change their preferences. Preserve explicit clearing separately from an unanswered question so old defaults cannot return. Confirm the provider's actual empty-response behavior before claiming this is automated.
 
-Record why an interest was assigned: explicit choice, disclosed topic signup, or behavioral signal. Topic clicks may create a separate dated engagement signal; they do not override a refusal or grant consent for Stack marketing. Do not use email opens as reliable intent evidence.
+Record why an interest was assigned: explicit choice, disclosed topic signup, or behavioral signal. Topic clicks can reveal emerging interest over time; keep them as dated behavioral signals, account for link scanners, and do not treat one click as a definitive segment or buying stage. They do not override an explicit preference/refusal or grant consent for Stack marketing. Do not use email opens as reliable intent evidence. Keep the AI agents option while substantive routing experiments and business-system field notes are part of the editorial plan; remove the promise if that track is discontinued.
+
+Button: **Save My Preferences** for the preference page. A dedicated initial-signup variant may use **Customize My Report**. Do not put product/sales disclaimers in the headline area. Keep acquisition source hidden from this form; source-specific incoming links and native acquisition fields supply it. A later preference update must not replace original acquisition with the newsletter email's source.
 
 ## 3. Audience: who they say they are
 
-Ask **Which best describes you?** as an optional second question. Store one selection in `msw_audience_type`. It must not block email signup.
+Ask **Which best describes you right now?** as an optional second question. Use radio buttons and store one selection in `msw_audience_type`. It must not block email signup.
 
 | Choice | Tag |
 | --- | --- |
@@ -58,11 +62,11 @@ Ask **Which best describes you?** as an optional second question. Store one sele
 | Creative or production studio | `avatar_studio` |
 | Creator or filmmaker | `avatar_creator` |
 | Founder or operator | `avatar_founder` |
-| Investor or long-term crypto holder | `avatar_investor` |
+| Investor, trader, or long-term crypto holder | `avatar_investor` |
 | AI-agent builder | `avatar_agent_builder` |
-| Just exploring | `avatar_exploring` |
+| Just exploring for now | `avatar_exploring` |
 
-Replace the derived avatar tag when the subscriber changes their answer. Do not infer wealth, holdings, suitability, occupation, or purchase readiness from this field. Skipping is unknown, not “Just exploring.”
+Replace the derived avatar tag when the subscriber changes their answer. Keep these stable tag identifiers when display labels change. Do not infer wealth, holdings, suitability, occupation, or purchase readiness from this field. Skipping is unknown, not “Just exploring for now.”
 
 ## 4. Intent: what actually happened
 
