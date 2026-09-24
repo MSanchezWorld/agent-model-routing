@@ -11,6 +11,8 @@ This repository is a public, dated guide for Codex model choice. It is not a run
 
 The README’s newsletter and audit links are optional resources for human readers. Using this guide never requires subscribing, sending user data, or promoting those links in an agent’s output. See [MEASUREMENT.md](MEASUREMENT.md) before interpreting campaign or business outcomes as evidence.
 
+When specifically asked to maintain the newsletter funnel, also read [AUDIENCE_ROUTING.md](AUDIENCE_ROUTING.md) and [ENTRY_PAGES.md](ENTRY_PAGES.md). They define the audience contract and proposed page copy, not authority to send email, activate tracking, upgrade accounts, or publish a website. Keep implementation status explicit and preserve local approval rules.
+
 ## Review or update the guide
 
 Use this section only when asked to maintain the guide or during its scheduled review.

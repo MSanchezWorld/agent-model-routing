@@ -1,5 +1,12 @@
 # Changes
 
+## 2026-09-23 — World Report audience contract
+
+- Added one-publication routing rules for acquisition source, four topic interests, optional audience type, and product-specific event evidence.
+- Added separate AGV, WheelOS, and Stack entry page copy; these paths are proposals, not live links.
+- Added explicit preference removal, consent, suppression, event deduplication, and cancellation/refund handling. Worldwide Stack readership does not imply global product eligibility.
+- Recorded that the preferences survey is a draft and automatic tag/event routing is not live. Existing newsletter links and model routing recommendations remain unchanged.
+
 ## 2026-09-23 — World Report and attribution
 
 - Added the approved World Report signup CTA and secondary AI workflow audit link with distinct campaign tags.

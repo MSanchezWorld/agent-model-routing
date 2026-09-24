@@ -27,10 +27,12 @@ Check the review date before relying on model availability or prices. Recheck of
 
 Weekly experiments on AI video, agency growth, and capital leverage.
 
-**Follow the race to commercially reliable AI video.** Get benchmark results, production economics, agency lead-to-cash lessons, and capital leverage insights delivered once a week.
+**Follow the race to commercially reliable AI video.** Get one short weekly issue about what I’m testing. The planned topic preferences let you choose AI video, agency growth, capital leverage, or AI agents for more focused field notes.
 
 [**Get the Weekly Report**](https://miguelsanchez.world/?utm_source=github&utm_medium=repository&utm_campaign=agent_routing&utm_content=readme_primary)
 
 Want help applying AI to a business workflow? [Explore the AI workflow audit](https://growth.massideation.com/checkout/audit?brand_route=miguel_sanchez_world&utm_source=github&utm_medium=repository&utm_campaign=agent_routing&utm_content=readme_audit).
 
 The guide remains freely available. These links use campaign tags to distinguish their source; they contain no personal identifiers. See [measurement and attribution](MEASUREMENT.md) for what the tags can and cannot prove.
+
+Building the same kind of audience system? The [audience routing contract](AUDIENCE_ROUTING.md) defines sources, preferences, audience types, consent, and confirmed product events. [Entry page drafts](ENTRY_PAGES.md) contain the three topic promises. These documents describe the planned funnel; they do not claim its automation is live.
