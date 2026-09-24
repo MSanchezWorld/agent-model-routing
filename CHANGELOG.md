@@ -1,5 +1,12 @@
 # Changes
 
+## 2026-09-23 — World Report and attribution
+
+- Added the approved World Report signup CTA and secondary AI workflow audit link with distinct campaign tags.
+- Added measurement guidance separating acquisition, email clicks, confirmed payments, and routing cost evidence.
+- Documented private export reconciliation and its limits. No automatic revenue integration or measured savings is claimed.
+- Routing recommendations and their review date are unchanged.
+
 ## 2026-09-23 — Agent use and maintenance instructions
 
 - Added `AGENTS.md` with steps for using the route on a task and a review process for future changes.
