@@ -1,0 +1,9 @@
+placement,url,expected_source_tag
+Navo website,https://miguelsanchez.world/?utm_source=navo&utm_medium=website&utm_campaign=world_report&utm_content=navo_cta,source_navo
+WheelOS website,https://miguelsanchez.world/?utm_source=wheelos&utm_medium=website&utm_campaign=world_report&utm_content=wheelos_cta,source_wheelos
+Stack website,https://miguelsanchez.world/?utm_source=stack&utm_medium=website&utm_campaign=world_report&utm_content=stack_cta,source_stack
+YouTube routing video,https://miguelsanchez.world/?utm_source=youtube&utm_medium=video&utm_campaign=agent_routing&utm_content=description,source_youtube
+Public speaking,https://miguelsanchez.world/?utm_source=public_speaking&utm_medium=qr&utm_campaign=world_report&utm_content=talk_cta,source_public_speaking
+Referral,https://miguelsanchez.world/?utm_source=referral&utm_medium=referral&utm_campaign=world_report&utm_content=shared_link,source_referral
+GitHub guide,https://miguelsanchez.world/?utm_source=github&utm_medium=repository&utm_campaign=agent_routing&utm_content=readme_primary,source_github
+Mass Ideation website,https://miguelsanchez.world/?utm_source=massideation&utm_medium=website&utm_campaign=world_report&utm_content=massideation_cta,source_massideation

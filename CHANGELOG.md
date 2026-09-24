@@ -1,5 +1,13 @@
 # Changes
 
+## 2026-09-23 — Preference-center copy refinement
+
+- Adopted “Customize your World Report,” the exact optional checkbox/radio questions, revised audience labels, and “Save My Preferences.”
+- Removed defensive signup wording from the main form copy; acquisition source remains separate and invisible to respondents.
+- Added a source-link registry for Navo, WheelOS, Stack, YouTube, public speaking, referral, GitHub, and Mass Ideation. Links use the existing homepage while topic pages remain drafts; expected tag mappings are not active automation.
+- Defined broad-only content for no selected interests and distinguished an explicit empty save from leaving an existing preference page without saving. Behavioral signals remain separate from consent and confirmed buying stages.
+- Beehiiv preview displays the revised copy. The form remains a draft; publication and automated source/tag synchronization are not claimed.
+
 ## 2026-09-23 — World Report audience contract
 
 - Added one-publication routing rules for acquisition source, four topic interests, optional audience type, and product-specific event evidence.
