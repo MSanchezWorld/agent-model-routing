@@ -92,7 +92,7 @@ If all hosted subscriptions are unavailable, a local model can take the work **w
 
 **Promotion:** propose a route change only when the challenger meets the quality floor and the full cost or user outcome improves on repeated relevant work. Require owner approval before publishing a new default or changing local settings. A new release alone never promotes itself. Keep the previous route and rollback trigger.
 
-**Review cadence:** extend the existing proposal-only weekly review to scan OpenAI, Anthropic, xAI, relevant open-weight releases, Jev's decision-model niche, availability, pricing, retirements, and local task evidence. Stay quiet when nothing material changed. On a material change, create a dated proposal or pull request; do not merge it or reconfigure running agents automatically. Trigger an earlier review after a consequential failure or a release that directly affects an active task family.
+**Review cadence:** extend the existing proposal-only weekly review to scan OpenAI, Anthropic, xAI, relevant open-weight releases, Jev's decision-model niche, availability, pricing, retirements, and local task evidence. The [model-watch proposal](MODEL_WATCH_PROPOSAL.md) recommends a quiet Monday/Thursday cadence and names the sources and promotion gate. On a material change, create a dated proposal or pull request; do not merge it or reconfigure running agents automatically. Trigger an earlier review after a consequential failure or a release that directly affects an active task family.
 
 ## First implementation slice
 
