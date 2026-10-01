@@ -1,6 +1,6 @@
 # Routing guide
 
-Reviewed 2026-10-01 against the current Codex model guidance, model availability and credit table. **Proposed update for owner review; not an active default until approved and merged.** Start with the lowest model and reasoning effort likely to deliver a complete result. Verify the outcome before treating a cheaper route as successful.
+Reviewed 2026-10-01 against the current Codex model guidance, model availability and credit table. Start with the lowest model and reasoning effort likely to deliver a complete result. Verify the outcome before treating a cheaper route as successful.
 
 ## Choose by task
 
@@ -11,7 +11,7 @@ Reviewed 2026-10-01 against the current Codex model guidance, model availability
 | Demanding code or planning with several interacting constraints | GPT-6.1 Sol / medium or high | Compare Astra / low or medium when errors or rework could outweigh the added cost. |
 | Consequential architecture, benchmark methodology, security or recovery design, and stubborn failures | GPT-6 Astra / medium | Raise to high for unusually hard unresolved reasoning; compare GPT-6.1 Sol / high where it clears the same quality bar. |
 
-For one ongoing app build, GPT-6.1 Sol / medium is the proposed usual chat setting when available. Use a focused Astra task for a difficult design or review decision. For an evaluation system, establish consequential measurement rules with Astra / medium, then use GPT-6.1 Sol / medium for implementation of settled requirements. These are starting judgments, not measured winners for every project. Availability depends on the account, client and rollout; use the previous Sol route if 6.1 is unavailable. [OpenAI models](https://learn.chatgpt.com/docs/models)
+For one ongoing app build, GPT-6.1 Sol / medium is the usual chat setting when available. Use a focused Astra task for a difficult design or review decision. For an evaluation system, establish consequential measurement rules with Astra / medium, then use GPT-6.1 Sol / medium for implementation of settled requirements. These are starting judgments, not measured winners for every project. Availability depends on the account, client and rollout; use the previous Sol route if 6.1 is unavailable. [OpenAI models](https://learn.chatgpt.com/docs/models)
 
 One agent is a conservative default. Add another agent only when independent work is worth the context, coordination, and review cost and local authorization permits it. Pass the exact model and reasoning effort to any worker; a name or Markdown instruction alone does not switch its runtime.
 

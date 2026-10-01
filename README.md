@@ -1,7 +1,7 @@
 # Codex agent model routing
 
-- **Proposed starting route:** GPT-6.1 Sol / medium / Standard, when available.
-- **Last reviewed:** 2026-10-01. This route change awaits owner approval in its pull request.
+- **Current starting route:** GPT-6.1 Sol / medium / Standard, when available.
+- **Last reviewed:** 2026-10-01.
 - **Scope:** Codex GPT-6 model selection. Other agent runtimes need their own model and effort mapping.
 
 This public guide helps choose a model for a task while accounting for quality, token use, retries, tools, and review effort. It is a set of recommendations, not an automatic router or a claim that one model has been proven cheapest for every task.
@@ -15,7 +15,7 @@ This public guide helps choose a model for a task while accounting for quality, 
 
 See [the full routing guide](ROUTING.md) for exceptions and cost limits. [Agent instructions](AGENTS.md) explain how to use and review it. [Set up another computer](SETUP.md) to use the guide without access to a private file store. [Changes](CHANGELOG.md) records reviewed revisions.
 
-The proposed starting points follow [OpenAI's Codex subagent guidance](https://learn.chatgpt.com/docs/agent-configuration/subagents) and [model selection guide](https://developers.openai.com/api/docs/guides/model-selection). [Codex credit rates](https://learn.chatgpt.com/docs/pricing) help compare token prices. Availability varies by plan and client. There is no published benchmark here showing which route minimizes complete task cost for this workspace.
+The starting points follow [OpenAI's Codex subagent guidance](https://learn.chatgpt.com/docs/agent-configuration/subagents) and [model selection guide](https://developers.openai.com/api/docs/guides/model-selection). [Codex credit rates](https://learn.chatgpt.com/docs/pricing) help compare token prices. Availability varies by plan and client. There is no published benchmark here showing which route minimizes complete task cost for this workspace.
 
 ## Keeping this useful
 

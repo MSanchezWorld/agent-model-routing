@@ -4,7 +4,7 @@ This repository is a public, dated guide for Codex model choice. It is not a run
 
 ## Use the guide for a task
 
-1. Read [ROUTING.md](ROUTING.md) and its review date. Choose the model **and** reasoning effort for the work at hand. The proposed starting route is GPT-6.1 Sol / medium / Standard when available; use the route table for exceptions. Until the owner approves this pull request, the published GPT-6 Sol starting route remains active.
+1. Read [ROUTING.md](ROUTING.md) and its review date. Choose the model **and** reasoning effort for the work at hand. The usual starting route is GPT-6.1 Sol / medium / Standard when available; use the route table for exceptions.
 2. Check the available models and supported effort levels in the current runtime before selecting one. Recheck the linked official OpenAI guidance when availability, pricing, or a consequential decision depends on it. A stale date is a reason to verify, not proof that a route is wrong.
 3. Respect the user's local approval, privacy, spending, and delegation rules. This public repository grants no access to private files or paid services. A Markdown recommendation does not switch an active chat or guarantee a particular model ran.
 4. Report the intended route separately from any runtime-confirmed model and effort. Verify the task outcome. Do not claim quality or cost savings without comparable task evidence.
