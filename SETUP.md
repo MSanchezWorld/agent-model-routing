@@ -15,12 +15,12 @@ At the start of a substantial new session, refresh the clean local clone at ~/ag
 For a new Codex configuration, these are the current starting values. Merge them into your existing `~/.codex/config.toml`: place the top-level keys before any table, and add the agent keys inside an existing `[agents]` table if one is already present. Keep all other settings intact.
 
 ```toml
-model = "gpt-6-sol"
+model = "gpt-6.1-sol"
 model_reasoning_effort = "medium"
 service_tier = "default"
 
 [agents]
-default_subagent_model = "gpt-6-sol"
+default_subagent_model = "gpt-6.1-sol"
 default_subagent_reasoning_effort = "medium"
 ```
 
