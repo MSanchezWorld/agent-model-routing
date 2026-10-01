@@ -1,10 +1,10 @@
 # Proposal: model watch and route review
 
-Proposed 2026-09-25. This is a **proposal-only** review process. A new leaderboard rank, release, or vendor price does not change the active route. The owner chose to approve each recommendation before a default changes.
+Proposed 2026-09-25; monitor schedule activated 2026-10-01. This is a **proposal-only** review process. A new leaderboard rank, release, or vendor price does not change the active route. The owner chose to approve each recommendation before a default changes. The expanded monitor has not yet completed a scheduled run.
 
 ## Cadence and signal sources
 
-Run one quiet review **twice a week, Monday and Thursday**, with an earlier manual review when a new model directly affects an active task or a current route fails. Reuse the existing routing-review automation rather than creating another monitor. Its current prompt covers Codex only; updating it requires an approved automation change. Stay silent when nothing material changed.
+The existing routing-review heartbeat is now scheduled for a quiet review **twice a week, Monday and Thursday**, with an earlier manual review when a new model directly affects an active task or a current route fails. Its saved prompt covers official proprietary and relevant open-weight releases, independent benchmark evidence, and local task outcomes. The schedule and prompt were read back from the automation configuration on 2026-10-01; the first expanded run and notification delivery remain unverified. Stay silent when nothing material changed.
 
 | Signal | Sources to check | What it can establish |
 | --- | --- | --- |
