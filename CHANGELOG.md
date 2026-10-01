@@ -1,5 +1,11 @@
 # Changes
 
+## 2026-10-01 — Proposed GPT-6.1 Sol starting route
+
+- Proposed changing the general Codex starting route from GPT-6 Sol / medium / Standard to GPT-6.1 Sol / medium / Standard when available, with GPT-6 Sol / medium as the rollout fallback. Luna / low remains the clear-work route; Astra / medium remains the consequential hard-reasoning route.
+- [OpenAI's Codex guidance](https://learn.chatgpt.com/docs/agent-configuration/subagents) recommends GPT-6.1 Sol for most Codex tasks; the [model page](https://developers.openai.com/api/docs/models/gpt-6.1-sol) describes near-Astra complex-work performance as vendor guidance, not a result from this workspace. [Codex pricing](https://learn.chatgpt.com/docs/pricing) lists the same 50 input / 250 output credit rates as GPT-6 Sol and half the cached-input rate (2.5 versus 5), per million tokens.
+- Availability varies by plan, client and rollout. No paired accepted-task quality, retries or complete-cost comparison exists yet for Miguel's work. No local model setting, active chat, installed agent or dispatcher is changed by this proposal. Owner approval is required before publishing it as the new default; Git history preserves the prior route for rollback.
+
 ## 2026-09-24 — Native preference-center setup
 
 - Removed the obsolete inline Interests field from the saved homepage signup draft; email, first name, and the weekly-report button remain. The website draft is unpublished.
