@@ -63,7 +63,7 @@ The user-facing route is an **ordered list for each task type**, not one model f
 | Task type | Provisional priority to evaluate |
 | --- | --- |
 | Visual product design | Claude's design-capable environment → Codex Astra → Grok's visual/prototype environment → eligible local vision model |
-| Routine app coding | Codex Sol → Claude coding environment → Grok coding environment → eligible local coding model |
+| Routine app coding | Codex GPT-6.1 Sol / medium (GPT-6 Sol if unavailable) → Claude coding environment → Grok coding environment → eligible local coding model |
 | Hard architecture or benchmark validity | Codex Astra → strongest accessible Claude coding/research environment → Grok → local model only if it clears the same quality floor |
 | Repetitive coding, extraction, and private bulk work | Eligible local model → Codex Luna → other available low-cost hosted model → stronger model if verification fails |
 | Fast typed classification in software | Deterministic rule → eligible local classifier or Jev → a stronger model when the error cost warrants it |
