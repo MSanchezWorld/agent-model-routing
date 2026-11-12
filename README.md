@@ -2,7 +2,7 @@
 
 - **Current starting route:** GPT-6.1 Sol / medium / Standard, when available.
 - **Last reviewed:** 2026-10-01.
-- **Scope:** Codex GPT-6 model selection. Other agent runtimes need their own model and effort mapping.
+- **Scope:** Codex GPT-6 model selection, plus [starting routes for Claude](ROUTING.md#claude-routes) added 2026-11-12. Other agent runtimes need their own model and effort mapping.
 
 This public guide helps choose a model for a task while accounting for quality, token use, retries, tools, and review effort. It is a set of recommendations, not an automatic router or a claim that one model has been proven cheapest for every task.
 

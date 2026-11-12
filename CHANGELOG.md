@@ -1,5 +1,11 @@
 # Changes
 
+## 2026-11-12 — Claude routes
+
+- Added a Claude section to the routing guide: Haiku 5.5 / low for simple checked work, Sonnet 5.5 / medium for bounded drafting and routine review, Opus 5.5 / medium for planning, review and judgment, and Fable 5.2 / high only for exceptional work with existing access. Miguel approved adding the section on 2026-11-12.
+- The rows route by the cost of a wrong answer and whether an automatic check can catch it. They are starting judgments. No paired task comparison, price check or usage measurement was done for this change.
+- The Codex routes, credit table and review date of 2026-10-01 are unchanged. Model availability varies by account, plan and client.
+
 ## 2026-10-01 — GPT-6.1 Sol starting route
 
 - Changed the general Codex starting route from GPT-6 Sol / medium / Standard to GPT-6.1 Sol / medium / Standard when available, with GPT-6 Sol / medium as the rollout fallback. Luna / low remains the clear-work route; Astra / medium remains the consequential hard-reasoning route. Miguel approved the system update on 2026-10-01.
