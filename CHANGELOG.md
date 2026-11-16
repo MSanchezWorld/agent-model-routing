@@ -1,5 +1,11 @@
 # Changes
 
+## 2026-11-16 — Claude multi-model check
+
+- Checked the Claude section against Anthropic's current [model-choice guidance](https://platform.claude.com/docs/en/about-claude/models/choosing-a-model), [cost and intelligence guide](https://platform.claude.com/docs/en/about-claude/models/optimizing-for-cost-and-intelligence), [Claude Code advisor](https://code.claude.com/docs/en/advisor) and [model configuration](https://code.claude.com/docs/en/model-config). Miguel asked for all agent systems to be updated on 2026-11-16.
+- The Claude rows are unchanged. Added a "Mixing Claude models" section: start on Opus 5.5 at default effort, tune effort before switching models, escalate by failure where checks exist, treat the advisor as an experimental candidate, and use an orchestrator with cheaper helpers only for splittable work.
+- The figures are Anthropic's own measurements. No paired task comparison or usage measurement was done for this change. The Codex routes and the 2026-10-01 review date are unchanged.
+
 ## 2026-11-12 — Claude routes
 
 - Added a Claude section to the routing guide: Haiku 5.5 / low for simple checked work, Sonnet 5.5 / medium for bounded drafting and routine review, Opus 5.5 / medium for planning, review and judgment, and Fable 5.2 / high only for exceptional work with existing access. Miguel approved adding the section on 2026-11-12.

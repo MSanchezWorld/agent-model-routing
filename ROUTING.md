@@ -34,7 +34,7 @@ Astra's listed input and output rates are 5 times GPT-6.1 Sol's; GPT-6.1 Sol's c
 
 ## Claude routes
 
-Added 2026-11-12. This section maps Claude models to work for people who run Claude alongside Codex. The model names are the current Claude 5 family. Prices, usage limits and vendor guidance were not rechecked for this section, and no comparison on equivalent tasks has been run, so treat every row as a starting judgment.
+Added 2026-11-12; checked 2026-11-16 against Anthropic's [model-choice guidance](https://platform.claude.com/docs/en/about-claude/models/choosing-a-model), [cost and intelligence guide](https://platform.claude.com/docs/en/about-claude/models/optimizing-for-cost-and-intelligence) and [Claude Code model configuration](https://code.claude.com/docs/en/model-config). The rows did not change. This section maps Claude models to work for people who run Claude alongside Codex. No comparison on equivalent tasks has been run, so treat every row as a starting judgment.
 
 The rule: **route by the cost of a wrong answer and whether an automatic check can catch it.** If tests, schemas, hashes or scripts verify the output, use the cheaper model and rely on the check. If nothing can check it (taste, meaning, strategy, security judgment), use the strongest model you already have access to.
 
@@ -47,6 +47,18 @@ The rule: **route by the cost of a wrong answer and whether an automatic check c
 | Repeated release checks (HTTPS, hashes, frozen pages) | No model: a deterministic script | A model only reads the script's result. |
 
 When both providers are available, have a reviewer from a different provider than the builder check substantial work. Select an exact model and effort for any review you want to attribute; account defaults and aliases can change with releases. A documented model is not proof that your account, plan or client can use it. Check the model your runtime actually reports.
+
+### Mixing Claude models
+
+Anthropic's guidance as of 2026-11-16, with what it means for these routes:
+
+- **Start with Opus 5.5 at its default effort.** Anthropic says most workloads start there. Move to Fable 5.2 only when Opus 5.5 at its highest effort still falls short on demanding or long-running work.
+- **Tune effort before switching models.** Claude Code now defaults Fable 5.2, Opus 5.5, Sonnet 5.5 and Haiku 5.5 to medium. A saved setting that forces a higher effort overrides that on every session.
+- **Escalate by failure where a check exists.** For work with tests, run at low effort and re-run only the failures at high. Anthropic measured about 40% lower cost at the same pass rate.
+- **Advisor (experimental).** A cheaper main model consults a stronger one at decision points. Anthropic's own measurements showed small gains, some within noise, and it helps only on long multi-step tasks where the main model actually consults. Treat it as a candidate for large refactors or stubborn bugs, not a default.
+- **Orchestrator with cheaper helpers.** For work that splits into independent pieces, an Opus 5.5 lead with Sonnet 5.5 helpers matched Opus 5.5 alone for about a third less. Claude Code helpers inherit the main model unless their definition sets one, so set it explicitly. Don't use this for one dependent chain of work.
+
+These are vendor measurements, not results from equivalent tasks in this workspace.
 
 ## How to improve the route
 
