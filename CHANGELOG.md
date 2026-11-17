@@ -1,5 +1,12 @@
 # Changes
 
+## 2026-11-17 — GPT-6.2 routing proposal
+
+- Update the general route from Sol 6.1 / medium to Sol 6.2 / medium and consequential reasoning from Astra 6 to Astra 6.2. Retain Luna and provisional Terra routes, explicit efforts, Standard speed, and local delegation boundaries.
+- Verify the [release](https://openai.com/index/introducing-gpt-6-2-astra-sol/) and [pricing](https://learn.chatgpt.com/docs/pricing). Sol rates remain 50 / 2.5 / 250; Astra rates become 200 / 10 / 1,000 per million input / cached input / output tokens.
+- Keep pinned production workers separate from reusable profile migration. Clarify catalog default low versus policy medium and ultra effort versus Ultrafast speed.
+- Claude routes remain unchanged. No representative paired task benchmark has been run; vendor savings do not establish local savings. This proposal does not switch any reader’s runtime.
+
 ## 2026-11-16 — Claude multi-model check
 
 - Checked the Claude section against Anthropic's current [model-choice guidance](https://platform.claude.com/docs/en/about-claude/models/choosing-a-model), [cost and intelligence guide](https://platform.claude.com/docs/en/about-claude/models/optimizing-for-cost-and-intelligence), [Claude Code advisor](https://code.claude.com/docs/en/advisor) and [model configuration](https://code.claude.com/docs/en/model-config). Miguel asked for all agent systems to be updated on 2026-11-16.

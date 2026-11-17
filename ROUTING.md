@@ -1,36 +1,45 @@
 # Routing guide
 
-Reviewed 2026-10-01 against the current Codex model guidance, model availability and credit table. Start with the lowest model and reasoning effort likely to deliver a complete result. Verify the outcome before treating a cheaper route as successful.
+Reviewed 2026-11-17 against the [GPT-6.2 release](https://openai.com/index/introducing-gpt-6-2-astra-sol/), [Codex guidance](https://learn.chatgpt.com/docs/agent-configuration/subagents), current runtime catalog and [credit rates](https://learn.chatgpt.com/docs/pricing). These are starting judgments, not locally benchmarked winners.
 
 ## Choose by task
 
-| Task | Start with | Change when |
+Start general work with **GPT-6.2 Sol / medium / Standard** when available. Keep cheaper candidates for bounded work; use Astra for a consequential subtask, not as an always-running project manager.
+
+| Work | Starting route | Change when |
 | --- | --- | --- |
-| Mechanical edits, extraction, formatting, simple documentation, or a known fix | GPT-6 Luna / low | Use GPT-6.1 Sol / low or medium when requirements interact or judgment matters. |
-| Normal app development, integrations, debugging, research, and bounded review | GPT-6.1 Sol / medium | Use Luna for clear repeatable work; use GPT-6 Sol / medium where 6.1 is unavailable. |
-| Demanding code or planning with several interacting constraints | GPT-6.1 Sol / medium or high | Compare Astra / low or medium when errors or rework could outweigh the added cost. |
-| Consequential architecture, benchmark methodology, security or recovery design, and stubborn failures | GPT-6 Astra / medium | Raise to high for unusually hard unresolved reasoning; compare GPT-6.1 Sol / high where it clears the same quality bar. |
+| Mechanical edits, formatting, extraction, known fixes, simple documentation | GPT-6 Luna / low | Use GPT-6.2 Sol / low or medium if requirements interact or judgment matters |
+| Visual reasoning, bounded computer use, concise writing, scoped fixes | GPT-6.1 Terra / medium | Use low for clear small tasks; Sol medium for interacting requirements or a demonstrated capability gap |
+| Routine engineering, integrations, normal debugging, bounded review | GPT-6.2 Sol / medium | Use GPT-6 Luna / low or medium for a clear repeated workflow; compare GPT-6.2 Astra / low when ambiguity or rework risk is material |
+| Demanding coding, multi-step computer work, research synthesis, ambiguous planning | GPT-6.2 Sol / medium or high; GPT-6.2 Astra / low when justified | Raise Astra to medium or high when evidence and consequence justify the added reasoning |
+| Consequential decisions, novel security/recovery design, unresolved hard failures | GPT-6.2 Astra / medium or high | Use xhigh or max only for exceptional remaining uncertainty; use GPT-6.2 Sol / high when it meets the quality bar at lower total cost |
 
-For one ongoing app build, GPT-6.1 Sol / medium is the usual chat setting when available. Use a focused Astra task for a difficult design or review decision. For an evaluation system, establish consequential measurement rules with Astra / medium, then use GPT-6.1 Sol / medium for implementation of settled requirements. These are starting judgments, not measured winners for every project. Availability depends on the account, client and rollout; use the previous Sol route if 6.1 is unavailable. [OpenAI models](https://learn.chatgpt.com/docs/models)
+Always choose both model and effort. Route by the task rather than assigning every task in a project to the strongest model. State why Astra is needed and return routine implementation to Sol once that subtask is resolved. Terra visual and low-effort fallback routes remain provisional pending representative checks. If Luna is unavailable, consider Terra / low for clear work with an acceptance check before Sol / low. Previous Sol 6.1 and Astra 6 remain availability fallbacks after verifying runtime support.
 
-One agent is a conservative default. Add another agent only when independent work is worth the context, coordination, and review cost and local authorization permits it. Pass the exact model and reasoning effort to any worker; a name or Markdown instruction alone does not switch its runtime.
+One agent is the default. Delegation still requires local authorization and independent work worth its coordination cost. A routing document does not switch an active chat. Reusable desktop profiles and pinned production workers are separate: do not bulk-upgrade qualified workers without their own tests and release process.
 
 ## Credit rates and limits
 
-[Standard Codex credit rates](https://learn.chatgpt.com/docs/pricing), checked 2026-10-01, per million input / cached input / output tokens:
+Standard credits per million input / cached input / output tokens, checked 2026-11-17:
 
 | Model | Credits |
 | --- | --- |
 | GPT-6 Luna | 2.5 / 0.25 / 12.5 |
-| GPT-6.1 Sol | 50 / 2.5 / 250 |
-| GPT-6 Sol | 50 / 5 / 250 |
-| GPT-6 Astra | 250 / 25 / 1,250 |
+| GPT-6.1 Terra | 25 / 1.25 / 125 |
+| GPT-6.2 Sol | 50 / 2.5 / 250 |
+| GPT-6.2 Astra | 200 / 10 / 1,000 |
+| GPT-6.1 Sol (availability fallback) | 50 / 2.5 / 250 |
+| GPT-6 Astra (availability fallback) | 250 / 25 / 1,250 |
 
-Astra's listed input and output rates are 5 times GPT-6.1 Sol's; GPT-6.1 Sol's cached-input rate is half GPT-6 Sol's. Complete task cost can differ because models may use different amounts of reasoning and output, repeat failed attempts, call tools, or require human review. These rates do not determine a subscription allowance, and API prices use a separate rate card. Standard speed is the cost baseline; purchased-credit Fast usage is currently listed at 2 times Standard where available. [OpenAI pricing](https://learn.chatgpt.com/docs/pricing)
+Complete task cost includes reasoning, retries, tools and review. Vendor benchmark savings are not evidence of savings on your work. Subscription allowance, purchased credits and API billing are distinct.
 
-## Reasoning effort
+Keep Standard speed as the default. For 6.2, Fast consumes 2x included usage and credits. Ultrafast consumes 6x included usage; eligible purchased-credit/PAYG pricing is 3x through February 28, 2027, then 6x. Verify eligibility before use; this guide authorizes no spending or speed change. [Pricing](https://learn.chatgpt.com/docs/pricing)
 
-[OpenAI's Codex guidance](https://learn.chatgpt.com/docs/agent-configuration/subagents) now starts most tasks with GPT-6.1 Sol when available. [Its API model page](https://developers.openai.com/api/docs/models/gpt-6.1-sol) lists low, medium (default), high, xhigh and max effort; none and minimal are unsupported. Client controls may differ. A higher effort can improve difficult work but also increases response time and token use. Check the selected model's supported effort levels in your own runtime before applying a route. Do not treat effort labels as equivalent intelligence or cost across models.
+## Reasoning effort and evidence
+
+The checked Codex catalog lists low, medium, high, xhigh, max and ultra for both 6.2 models, with **low** as its default. Our general route explicitly chooses **medium**. Check your runtime rather than assuming API and app defaults match. Use xhigh/max only for concrete exceptional uncertainty under local rules. The `ultra` effort mode can delegate automatically; it is separate from Ultrafast speed. Neither is enabled by this guide.
+
+Preserve raw failures privately and report unresolved blockers. Require independent tests or review evidence before calling work complete; a self-report or model vote is not acceptance. Compare accepted quality, retries, latency and full usage before promoting an unmeasured route.
 
 ## Claude routes
 

@@ -1,7 +1,7 @@
 # Codex agent model routing
 
-- **Current starting route:** GPT-6.1 Sol / medium / Standard, when available.
-- **Last reviewed:** 2026-10-01.
+- **Current starting route:** GPT-6.2 Sol / medium / Standard, when available.
+- **Last reviewed:** 2026-11-17.
 - **Scope:** Codex GPT-6 model selection, plus [starting routes for Claude](ROUTING.md#claude-routes) added 2026-11-12. Other agent runtimes need their own model and effort mapping.
 
 This public guide helps choose a model for a task while accounting for quality, token use, retries, tools, and review effort. It is a set of recommendations, not an automatic router or a claim that one model has been proven cheapest for every task.
@@ -9,9 +9,9 @@ This public guide helps choose a model for a task while accounting for quality, 
 | Work | Starting route |
 | --- | --- |
 | Clear, repetitive edits or extraction | GPT-6 Luna / low |
-| Most app building, debugging, research, and integration work | GPT-6.1 Sol / medium when available; GPT-6 Sol / medium otherwise |
-| Ambiguous work where stronger reasoning may prevent rework | GPT-6.1 Sol / medium or high; compare Astra / low when the result warrants it |
-| Consequential architecture, benchmark validity, or unresolved hard problems | GPT-6 Astra / medium; raise effort only when needed |
+| Most app building, debugging, research, and integration work | GPT-6.2 Sol / medium when available; GPT-6.1 Sol / medium otherwise |
+| Ambiguous work where stronger reasoning may prevent rework | GPT-6.2 Sol / medium or high; compare Astra / low when the result warrants it |
+| Consequential architecture, benchmark validity, or unresolved hard problems | GPT-6.2 Astra / medium; raise effort only when needed |
 
 See [the full routing guide](ROUTING.md) for exceptions and cost limits. [Agent instructions](AGENTS.md) explain how to use and review it. [Set up another computer](SETUP.md) to use the guide without access to a private file store. [Changes](CHANGELOG.md) records reviewed revisions.
 
